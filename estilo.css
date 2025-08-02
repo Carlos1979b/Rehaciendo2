@@ -12,7 +12,9 @@
     --colorNav: rgb(231, 65, 65);
     --azul404: rgba(4, 93, 172, 0.87);
     --tamaño_titulo: 50px;
+    --tamaño_titulo_resp: 30px;
     --subTitulos: 30px;
+    --subtitulo_recorrido: 20px;
     --subtitulos_caja: 25px;
     --subtitulosMe1200: 23px;
     --parrafos: 20px;
@@ -72,6 +74,8 @@ h1 {
     box-shadow: 5px 5px 10px;
     position: relative;
     bottom: 30px;
+
+
 }
 
 p {
@@ -85,6 +89,8 @@ h2 {
     font-size: var(--subTitulos);
     color: var(--celeste);
     margin-top: 50px;
+
+
 
 }
 
@@ -131,8 +137,9 @@ h2 {
         width: 48%;
 
     }
-    @media(width < 513px){
-        width: 90%;
+
+    @media(width < 513px) {
+        width: 100%;
 
     }
 
@@ -555,11 +562,101 @@ button {
     }
 }
 
-@media(width < 400px) {
+@media(width < 763.64px) {
 
     .mapa {
         left: 0%;
         width: 100%;
 
     }
+}
+
+@media(width < 552px) {
+    h1 {
+        font-size: var(--tamaño_titulo_resp);
+    }
+
+}
+
+@media(width < 559px) {
+    h2 {
+        font-size: var(--subtitulo_recorrido);
+    }
+
+}
+
+@media(width < 763.64px) {
+
+    footer {
+        height: 800px;
+    }
+
+}
+
+@media(width < 763.64px) {
+    .lista {
+        position: relative;
+        top: 630px;
+        left: 8%;
+    }
+}
+
+@media(width < 763.64px) {
+
+    .formulario {
+        width: 90%;
+        height: 40%;
+        position: relative;
+        left: 5%;
+        bottom: 12%;
+
+    }
+}
+
+@media(width < 763.64px) {
+    .donacion {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        bottom: 80px;
+        left: 75%;
+
+    }
+}
+
+@media(width < 763.64px) {
+    .what {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 10px;
+        left: 60.5%;
+
+    }
+
+    .inst {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 71.9%;
+    }
+
+    .faceb {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 79%;
+    }
+
+    .mail {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        bottom: 6px;
+        left: 78%;
+    }
+
+
 }
