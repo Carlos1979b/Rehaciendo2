@@ -59,7 +59,7 @@ html {
 
 .contenedor {
 
-    height: 3950px;
+
     background-color: var(--blanco);
 
 }
@@ -114,7 +114,10 @@ h2 {
 .veinticuatro,
 .veinticinco,
 .veintiseis,
-.veintisiete {
+.veintisiete,
+.veintiocho,
+.veintinueve,
+.treinta {
     width: 32%;
     height: 640px;
     margin: 5px;
@@ -123,6 +126,15 @@ h2 {
     border-radius: 10px;
     background-color: var(--celeste);
     float: left;
+
+    @media(width < 763.64px) {
+        width: 48%;
+
+    }
+    @media(width < 513px){
+        width: 90%;
+
+    }
 
 }
 
@@ -139,7 +151,7 @@ h2 {
     box-shadow: 5px 5px 10px;
     position: relative;
     top: 100px;
-   
+
 }
 
 .i1,
@@ -168,7 +180,10 @@ h2 {
 .i24,
 .i25,
 .i26,
-.i27 {
+.i27,
+.i28,
+.i29,
+.i30 {
 
     position: relative;
     left: 11px;
@@ -179,8 +194,10 @@ h2 {
 
 .i19,
 .i25,
-.i27 {
-    
+.i28,
+.i27,
+.i29 {
+
     height: 43%;
     width: 95%;
 }
@@ -211,7 +228,10 @@ h2 {
 .p24,
 .p25,
 .p26,
-.p27 {
+.p27,
+.p28,
+.p29,
+.p30 {
 
     color: var(--blanco);
 }
@@ -227,7 +247,7 @@ iframe {
 .mapa {
     width: 50%;
     position: relative;
-    top: 170px;
+    top: 200px;
     left: 25%;
 
 }
@@ -482,10 +502,6 @@ button {
 
 }
 
-footer {
-    z-index: -1;
-}
-
 .confirmacion {
     padding: 0px;
     margin: 5px;
@@ -516,22 +532,34 @@ footer {
     bottom: 30px;
 
 }
-@media(width < 1200px){
 
-p{
-    font-size: var(--parrofosMe1200)
+@media(width < 1200px) {
+
+    p {
+        font-size: var(--parrofosMe1200)
+    }
+
+
 }
 
-
-}
-@media(width < 1200px){
-    h3{
+@media(width < 1200px) {
+    h3 {
         font-size: var(--subtitulosMe1200)
     }
 }
-@media(width < 765px){
-    footer{
+
+@media(width < 765px) {
+    footer {
         position: relative;
-        top: 1360px;
+        top: 250px;
+    }
+}
+
+@media(width < 400px) {
+
+    .mapa {
+        left: 0%;
+        width: 100%;
+
     }
 }
