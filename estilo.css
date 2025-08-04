@@ -306,9 +306,10 @@ h4 {
     text-align: center;
 }
 
+
 .masAtracciones {
     position: relative;
-    left: 40%;
+    left: 39%;
     color: var(--celeste);
 }
 
@@ -511,34 +512,73 @@ button {
 
 .confirmacion {
     padding: 0px;
-    margin: 5px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 500px;
+
+   
+}
+.c_uno, .c_dos{
+    border: 2px solid black;
+}
+.i_conf{
     width: 100%;
-    height: 25vh;
-    display: flex;
-    flex-direction: row-reverse;
+    height: 100%;
+}
+.conf_p{
+    font-size: 20px;
+    padding: 20px;
 }
 
 .P_inicial {
 
     position: relative;
-    top: 400px;
+    top: 20px;
     left: 45%;
 
 }
+@media( width < 1300px){
 
-.i_conf {
-    margin-left: 10px;
-    width: 90%;
-    height: 550px;
+.conf_p{
+    font-size: 18px;
+    padding: 18px;
 }
 
-.conf_p {
-    font-size: 20px;
-    width: 20%;
-    position: relative;
-    bottom: 30px;
+}
+@media( width < 1058px){
+
+.conf_p{
+    font-size: 15px;
+    padding: 15px;
+}
 
 }
+@media( width < 746px){
+
+.conf_p{
+    font-size: 12px;
+    padding: 12px;
+}
+
+}
+@media( width < 530px){
+
+
+.confirmacion {
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 500px;
+
+   
+}
+
+}
+
+
+
+
 
 @media(width < 1200px) {
 
@@ -618,8 +658,8 @@ button {
         width: 90px;
         height: 90px;
         position: absolute;
-        bottom: 80px;
-        left: 75%;
+        bottom: 70px;
+        left: 72%;
 
     }
 }
@@ -630,7 +670,7 @@ button {
         height: 30px;
         position: absolute;
         bottom: 10px;
-        left: 60.5%;
+        left: 55%;
 
     }
 
@@ -639,7 +679,7 @@ button {
         height: 30px;
         position: absolute;
         bottom: 20px;
-        left: 71.9%;
+        left: 67.5%;
     }
 
     .faceb {
@@ -647,7 +687,7 @@ button {
         height: 30px;
         position: absolute;
         bottom: 20px;
-        left: 79%;
+        left: 76%;
     }
 
     .mail {
@@ -655,8 +695,15 @@ button {
         height: 45px;
         position: absolute;
         bottom: 6px;
-        left: 78%;
+        left: 75.5%;
     }
 
 
+}
+@media(){
+    .masAtracciones {
+    position: relative;
+    left: 40%;
+    color: var(--celeste);
+}
 }
